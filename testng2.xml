@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite">
+
+    <!-- Define a test in the suite -->
+    <test name="TestMethodsInDemo1AndDemo2">
+
+        <!-- Define a group of classes -->
+        <classes>
+            <!-- First class with two methods -->
+            <class name="Test.Demo1">
+                <methods>
+                    <include name="LoanStatements"/>
+                    <include name="Loanretrival"/>
+                </methods>
+            </class>
+            
+            <!-- Second class with two methods -->
+            <class name="Test.Demo2">
+                <methods>
+                    <include name="ApplicationForm"/>
+                    <include name="ApplicationEntry"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+</suite>
